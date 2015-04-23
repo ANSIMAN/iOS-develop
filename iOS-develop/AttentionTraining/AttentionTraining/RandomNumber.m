@@ -15,16 +15,13 @@
 
 -(void)initWithMax:(int)max
 {
-//    NSLog(@"new 一个数组");
     array = [NSMutableArray new];
-//    NSLog(@"设置最大值为 %i",max);
     myMaxNumber =max;
     for(int i =1;i<max+1;++i)
     {
         
         [array addObject:[NSString stringWithFormat:@"%d",i]];
     }
-//    NSLog(@"添加  %i 到 %i",1,max);
     [self makeArrayRandom];
 }
 
@@ -36,13 +33,11 @@
         {
             int randomIndex = arc4random()%myMaxNumber;
             
-//            NSLog(@"array[%d]和 array[%d]交换",index,randomIndex);
             int tempValue = [array[randomIndex]intValue];
             
             array[randomIndex]=array[index];
             [array replaceObjectAtIndex:index withObject:[NSString stringWithFormat:@"%d",tempValue]];
         }
-//        NSLog(@"交换完毕");
     }
 }
 

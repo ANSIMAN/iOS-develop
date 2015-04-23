@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AttentionTraining/trianingViewController.m"
-            timestampString = "451295679.283141"
+            timestampString = "451498829.476316"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "-displayTimer"
             landmarkType = "5">
          </BreakpointContent>

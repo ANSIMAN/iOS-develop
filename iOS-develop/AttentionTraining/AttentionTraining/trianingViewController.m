@@ -30,16 +30,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     currentNumber = 0;
     isRunning = NO;
-//    NSLog(@"即将添加格子");
+    [self createUI];
+}
+-(void)createUI
+{
     [self addGrid];
-//    NSLog(@"即将创建时间");
     [self createTimer];
-//    NSLog(@"即将创建时间显示标签");
     [self displayTimer];
-//    NSLog(@"创建一个开始按钮");
     [self startButton];
 }
 
@@ -80,10 +79,8 @@
 -(void)createTimer
 {
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
-//    NSLog(@"创建时间成功");
     //停止计数器
     [_timer setFireDate:[NSDate distantFuture]];
-//    NSLog(@"停止时间");
     
 }
 -(void)displayTimer
@@ -94,15 +91,12 @@
     _label.text =@"0";
     _label.textAlignment  = NSTextAlignmentCenter;
     [self.view addSubview:_label];
-//    NSLog(@"创建显示时间成功");
     
 }
 -(void)onTimer
 {
     double value = [_label.text doubleValue]+0.01;
-//    NSLog(@"时间加1");
     _label.text = [NSString stringWithFormat:@"%.2f",value];
-//    NSLog(@"时间是 %f value ",value);
 }
 
 
@@ -173,10 +167,7 @@
         NSLog(@"%@",[change titleForState:UIControlStateNormal]);
         [button setTitle:[NSString stringWithFormat:@"%@",temp]forState:UIControlStateNormal];
         NSLog(@"%@",[button titleForState:UIControlStateNormal]);
-//        int tempValue = [array[randomIndex]intValue];
-//        array[randomIndex]=array[index];
-//        [array replaceObjectAtIndex:index withObject:[NSString stringWithFormat:@"%d",tempValue]];
-        
+     
     }
 }
 - (void)didReceiveMemoryWarning {
