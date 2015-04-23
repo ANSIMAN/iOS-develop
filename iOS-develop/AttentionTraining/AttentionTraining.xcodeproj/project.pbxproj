@@ -13,7 +13,6 @@
 		9A24832D1AE77DDF00AC6148 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A24832C1AE77DDF00AC6148 /* background.jpg */; };
 		9A406F311AE790C100ABFDFF /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A406F301AE790C100ABFDFF /* Users.plist */; };
 		9A8AFF721AE79B2700673F2B /* listViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AFF711AE79B2700673F2B /* listViewController.m */; };
-		9A8AFF751AE79E2000673F2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AFF741AE79E2000673F2B /* ViewController.m */; };
 		9A9729CB1AE21B2E001A76E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9729CA1AE21B2E001A76E2 /* main.m */; };
 		9A9729CE1AE21B2E001A76E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9729CD1AE21B2E001A76E2 /* AppDelegate.m */; };
 		9A9729D11AE21B2E001A76E2 /* trianingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9729D01AE21B2E001A76E2 /* trianingViewController.m */; };
@@ -45,8 +44,6 @@
 		9A406F301AE790C100ABFDFF /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
 		9A8AFF701AE79B2700673F2B /* listViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listViewController.h; sourceTree = "<group>"; };
 		9A8AFF711AE79B2700673F2B /* listViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listViewController.m; sourceTree = "<group>"; };
-		9A8AFF731AE79E2000673F2B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9A8AFF741AE79E2000673F2B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9A9729C51AE21B2E001A76E2 /* AttentionTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttentionTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9729C91AE21B2E001A76E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9729CA1AE21B2E001A76E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,8 +115,6 @@
 				9A238F961AE40E9700F69995 /* RandomNumber.h */,
 				9A238F971AE40E9700F69995 /* RandomNumber.m */,
 				9A9729D21AE21B2E001A76E2 /* Main.storyboard */,
-				9A8AFF731AE79E2000673F2B /* ViewController.h */,
-				9A8AFF741AE79E2000673F2B /* ViewController.m */,
 				9A9729D51AE21B2E001A76E2 /* Images.xcassets */,
 				9A9729D71AE21B2E001A76E2 /* LaunchScreen.xib */,
 				9A9729C81AE21B2E001A76E2 /* Supporting Files */,
@@ -258,7 +253,6 @@
 			files = (
 				9A9729D11AE21B2E001A76E2 /* trianingViewController.m in Sources */,
 				9A9729CE1AE21B2E001A76E2 /* AppDelegate.m in Sources */,
-				9A8AFF751AE79E2000673F2B /* ViewController.m in Sources */,
 				9A9729CB1AE21B2E001A76E2 /* main.m in Sources */,
 				9A2483281AE660C000AC6148 /* rootViewController.m in Sources */,
 				9A238F981AE40E9700F69995 /* RandomNumber.m in Sources */,

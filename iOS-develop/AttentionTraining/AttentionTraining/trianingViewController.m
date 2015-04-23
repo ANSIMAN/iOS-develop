@@ -8,6 +8,7 @@
 
 #import "trianingViewController.h"
 #import "RandomNumber.h"
+#import "rootViewController.h"
 #define numberOfEveryLine 5
 #define sumOfblock (numberOfEveryLine*numberOfEveryLine)
 #define WIDTH (self.view.frame.size.width/numberOfEveryLine)
@@ -36,10 +37,12 @@
 }
 -(void)createUI
 {
+    self.view.backgroundColor=[UIColor whiteColor];
     [self addGrid];
     [self createTimer];
     [self displayTimer];
     [self startButton];
+    [self returnButton];
 }
 
 -(void)addGrid
@@ -59,17 +62,18 @@
             NSLog(@"tag  = %d",200+integer);
             if(0==(col+row)%2)
             {
-                button.backgroundColor = [UIColor blueColor];
+                button.backgroundColor = [UIColor whiteColor];
             }
             else
             {
-                button.backgroundColor = [UIColor greenColor];
+                button.backgroundColor = [UIColor whiteColor];
             }
             NSString  *title = [NSString stringWithFormat:@"%@",(NSString*)[rand.array objectAtIndex:integer]];
             [button addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
             [button setTitle:title forState:UIControlStateNormal];
             button.titleLabel.font = [UIFont systemFontOfSize:28];
             button.titleLabel.textAlignment=NSTextAlignmentCenter;
+            button.tintColor=[UIColor blackColor];
             
             [self.view addSubview:button];
         }
@@ -86,7 +90,7 @@
 -(void)displayTimer
 {
     _label  =[[UILabel alloc]initWithFrame:CGRectMake(20, WIDTH*numberOfEveryLine, 280, 160)];
-    _label.backgroundColor = [UIColor grayColor];
+    _label.backgroundColor = [UIColor whiteColor];
     _label.font =[UIFont systemFontOfSize:50];
     _label.text =@"0";
     _label.textAlignment  = NSTextAlignmentCenter;
@@ -102,7 +106,6 @@
 
 -(void)onBtnClick:(UIButton *) sender
 {
-    NSLog(@"你点击了%@",sender.titleLabel.text);
     //点击事件
     if(!isRunning)
     if((currentNumber+1)==[[sender titleForState:UIControlStateNormal]intValue])
@@ -132,25 +135,46 @@
     [self.view addSubview:btnStart];
     
 }
+-(void)returnButton
+{
+    UIButton *btnStart=[UIButton buttonWithType:UIButtonTypeSystem];
+    btnStart.frame=CGRectMake(160, yOrigion, 100, 40);
+    btnStart.backgroundColor=[UIColor yellowColor];
+    [btnStart setTitle:@"返回" forState:UIControlStateNormal];
+    btnStart.titleLabel.font=[UIFont systemFontOfSize:30];
+    [btnStart addTarget:self action:@selector(onStartBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    btnStart.tag=101;
+    [self.view addSubview:btnStart];
+    
+}
+
 -(void)onStartBtnClick:(UIButton*)sender
 {
 //    [_timer setFireDate:[NSDate distantFuture]];
-    NSLog(@"bbeng");
-    if([@"0"  isEqual: _label.text])
+    if(100==sender.tag)
     {
-        NSLog(@"ad");
-        [_timer setFireDate:[NSDate distantPast]];
         
+        if([@"0"  isEqual: _label.text])
+        {
+            [_timer setFireDate:[NSDate distantPast]];
+        
+        }
+        else
+        {
+            _label.text = @"0";
+            [_timer setFireDate:[NSDate distantPast]];
+            [self makeGridRandom];
+        
+        }
     }
     else
     {
-        NSLog(@"dagagd");
-        _label.text = @"0";
-        [_timer setFireDate:[NSDate distantPast]];
-        [self makeGridRandom];
-        
+        rootViewController *tvc= [[rootViewController alloc]init];
+        [self presentViewController:tvc animated:YES completion:^{}];
+   
     }
 }
+
 
 -(void)makeGridRandom
 {

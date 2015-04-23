@@ -59,7 +59,6 @@
         case 300:
             //开始训练 跳转到训练界面
         {
-            NSLog(@"HEHE");
             trianingViewController *tvc= [[trianingViewController alloc]init];
             [self presentViewController:tvc animated:YES completion:^{}];
             break;
