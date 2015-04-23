@@ -9,8 +9,7 @@
 #import "rootViewController.h"
 #import "trianingViewController.h"
 //#import "SettingViewController.h"
-#import "listViewController.h"
-#define buttonCount 3
+#define buttonCount 4
 #define WIDTH (self.view.frame.size.width)
 #define HEIGHT (self.view.frame.size.height)
 #define ButtonHeight HEIGHT/10
@@ -37,7 +36,7 @@
     ImageView.image = [UIImage imageNamed:imageName];
     [self.view addSubview:ImageView];
 
-    NSArray *array =@[@"开始训练",@"用户设置",@"使用帮助"];
+    NSArray *array =@[@"开始训练",@"用户设置",@"用户记录",@"使用帮助"];
     for(NSInteger i = 0;i<buttonCount;++i)
     {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -65,13 +64,9 @@
         }
         case 301:
         {
-            
-            //用户设置
-            listViewController *svt = [[listViewController alloc]init];
-            [self presentViewController:svt animated:YES completion:^{}];
             break;
+            }
             
-        }
         default:
             break;
     }

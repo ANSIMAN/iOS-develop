@@ -12,7 +12,6 @@
 		9A24832B1AE6AEFB00AC6148 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A24832A1AE6AEFB00AC6148 /* SettingViewController.m */; };
 		9A24832D1AE77DDF00AC6148 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A24832C1AE77DDF00AC6148 /* background.jpg */; };
 		9A406F311AE790C100ABFDFF /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A406F301AE790C100ABFDFF /* Users.plist */; };
-		9A8AFF721AE79B2700673F2B /* listViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8AFF711AE79B2700673F2B /* listViewController.m */; };
 		9A9729CB1AE21B2E001A76E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9729CA1AE21B2E001A76E2 /* main.m */; };
 		9A9729CE1AE21B2E001A76E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9729CD1AE21B2E001A76E2 /* AppDelegate.m */; };
 		9A9729D11AE21B2E001A76E2 /* trianingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9729D01AE21B2E001A76E2 /* trianingViewController.m */; };
@@ -42,8 +41,6 @@
 		9A24832A1AE6AEFB00AC6148 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		9A24832C1AE77DDF00AC6148 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		9A406F301AE790C100ABFDFF /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Users.plist; sourceTree = "<group>"; };
-		9A8AFF701AE79B2700673F2B /* listViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listViewController.h; sourceTree = "<group>"; };
-		9A8AFF711AE79B2700673F2B /* listViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listViewController.m; sourceTree = "<group>"; };
 		9A9729C51AE21B2E001A76E2 /* AttentionTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttentionTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9729C91AE21B2E001A76E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9729CA1AE21B2E001A76E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,8 +103,6 @@
 				9A9729D01AE21B2E001A76E2 /* trianingViewController.m */,
 				9A2483261AE660C000AC6148 /* rootViewController.h */,
 				9A2483271AE660C000AC6148 /* rootViewController.m */,
-				9A8AFF701AE79B2700673F2B /* listViewController.h */,
-				9A8AFF711AE79B2700673F2B /* listViewController.m */,
 				9A2483291AE6AEFB00AC6148 /* SettingViewController.h */,
 				9A24832A1AE6AEFB00AC6148 /* SettingViewController.m */,
 				9A406F301AE790C100ABFDFF /* Users.plist */,
@@ -256,7 +251,6 @@
 				9A9729CB1AE21B2E001A76E2 /* main.m in Sources */,
 				9A2483281AE660C000AC6148 /* rootViewController.m in Sources */,
 				9A238F981AE40E9700F69995 /* RandomNumber.m in Sources */,
-				9A8AFF721AE79B2700673F2B /* listViewController.m in Sources */,
 				9A24832B1AE6AEFB00AC6148 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
