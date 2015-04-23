@@ -21,6 +21,7 @@
 		9A9729D61AE21B2E001A76E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9729D51AE21B2E001A76E2 /* Images.xcassets */; };
 		9A9729D91AE21B2E001A76E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9729D71AE21B2E001A76E2 /* LaunchScreen.xib */; };
 		9A9729E51AE21B2E001A76E2 /* AttentionTrainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9729E41AE21B2E001A76E2 /* AttentionTrainingTests.m */; };
+		9AB29C071AE956A4003182A2 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AB29C061AE956A4003182A2 /* background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		9A9729DE1AE21B2E001A76E2 /* AttentionTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttentionTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9729E31AE21B2E001A76E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9729E41AE21B2E001A76E2 /* AttentionTrainingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttentionTrainingTests.m; sourceTree = "<group>"; };
+		9AB29C061AE956A4003182A2 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		9A9729C71AE21B2E001A76E2 /* AttentionTraining */ = {
 			isa = PBXGroup;
 			children = (
+				9AB29C061AE956A4003182A2 /* background.jpg */,
 				9A9729CC1AE21B2E001A76E2 /* AppDelegate.h */,
 				9A9729CD1AE21B2E001A76E2 /* AppDelegate.m */,
 				9A9729CF1AE21B2E001A76E2 /* trianingViewController.h */,
@@ -233,6 +236,7 @@
 				9A9729D41AE21B2E001A76E2 /* Main.storyboard in Resources */,
 				9A9729D91AE21B2E001A76E2 /* LaunchScreen.xib in Resources */,
 				9A9729D61AE21B2E001A76E2 /* Images.xcassets in Resources */,
+				9AB29C071AE956A4003182A2 /* background.jpg in Resources */,
 				9A406F311AE790C100ABFDFF /* Users.plist in Resources */,
 				9A24832D1AE77DDF00AC6148 /* background.jpg in Resources */,
 			);

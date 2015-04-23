@@ -10,7 +10,7 @@
 #import "trianingViewController.h"
 //#import "SettingViewController.h"
 #import "listViewController.h"
-#define buttonCount 2
+#define buttonCount 3
 #define WIDTH (self.view.frame.size.width)
 #define HEIGHT (self.view.frame.size.height)
 #define ButtonHeight HEIGHT/10
@@ -27,15 +27,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-//    NSLog(@"你麻痹，运行了没");
-//    [self.view setBackgroundColor:[UIColor blueColor]];
     [self createUI];
 }
 -(void)createUI
 {
-    NSLog(@"hello");
-    NSArray *array =@[@"开始训练",@"使用帮助"];
+    NSString *imageName=[NSString stringWithFormat:@"background.jpg"];
+    UIImageView *ImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    
+    ImageView.image = [UIImage imageNamed:imageName];
+    [self.view addSubview:ImageView];
+
+    NSArray *array =@[@"开始训练",@"用户设置",@"使用帮助"];
     for(NSInteger i = 0;i<buttonCount;++i)
     {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -46,6 +48,7 @@
         [button addTarget:self action:@selector(onRootButton:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
     }
+ 
     
 }
 -(void)onRootButton:(UIButton*)sender
