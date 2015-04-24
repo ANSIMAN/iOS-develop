@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface trianingViewController : UIViewController
+@interface TrianingViewController : UIViewController
 
 
 @end

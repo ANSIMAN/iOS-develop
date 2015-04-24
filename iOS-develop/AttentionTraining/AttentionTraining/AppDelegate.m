@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "rootViewController.h"
+#import "RootViewController.h"
 //#import "trianingViewController.h"
 @interface AppDelegate ()
 
@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-        rootViewController *root = [[rootViewController alloc]init];
+        RootViewController *root = [[RootViewController alloc]init];
         root.view.backgroundColor = [UIColor whiteColor];
         self.window.rootViewController = root;
 //    trianingViewController *tvc = [[trianingViewController alloc]init];

@@ -6,15 +6,15 @@
 //  Copyright (c) 2015年 ZhouJiaming. All rights reserved.
 //
 
-#import "trianingViewController.h"
+#import "TrianingViewController.h"
 #import "RandomNumber.h"
-#import "rootViewController.h"
+#import "RootViewController.h"
 #define numberOfEveryLine 5
 #define sumOfblock (numberOfEveryLine*numberOfEveryLine)
 #define WIDTH (self.view.frame.size.width/numberOfEveryLine)
 #define yOrigion self.view.frame.size.width
 
-@interface trianingViewController ()
+@interface TrianingViewController ()
 {
     // 定时器
     UILabel *_label;
@@ -24,7 +24,7 @@
 }
 @end
 
-@implementation trianingViewController
+@implementation TrianingViewController
 {
     int currentNumber;
 }
@@ -169,7 +169,7 @@
     }
     else
     {
-        rootViewController *tvc= [[rootViewController alloc]init];
+        RootViewController *tvc= [[RootViewController alloc]init];
         [self presentViewController:tvc animated:YES completion:^{}];
    
     }

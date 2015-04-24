@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 ZhouJiaming. All rights reserved.
 //
 
-#import "rootViewController.h"
-#import "trianingViewController.h"
-//#import "SettingViewController.h"
+#import "RootViewController.h"
+#import "TrianingViewController.h"
+#import "SettingViewController.h"
 #define buttonCount 4
 #define WIDTH (self.view.frame.size.width)
 #define HEIGHT (self.view.frame.size.height)
@@ -18,11 +18,11 @@
 #define yOrigion HEIGHT/6
 
 #define distanceOfEachButton ButtonHeight/1.5
-@interface rootViewController ()
+@interface RootViewController ()
 
 @end
 
-@implementation rootViewController
+@implementation RootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -58,19 +58,23 @@
         case 300:
             //开始训练 跳转到训练界面
         {
-            trianingViewController *tvc= [[trianingViewController alloc]init];
+            TrianingViewController *tvc= [[TrianingViewController alloc]init];
             [self presentViewController:tvc animated:YES completion:^{}];
             break;
         }
         case 301:
         {
+            //用户设置
+            SettingViewController *stv = [[SettingViewController alloc]init];
+            [self presentViewController:stv animated:YES completion:^{}];
             break;
-            }
+        }
             
         default:
             break;
     }
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
