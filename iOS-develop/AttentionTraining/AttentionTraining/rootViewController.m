@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "TrianingViewController.h"
 #import "SettingViewController.h"
+#import "ListViewController.h"
 #define buttonCount 4
 #define WIDTH (self.view.frame.size.width)
 #define HEIGHT (self.view.frame.size.height)
@@ -69,6 +70,19 @@
             [self presentViewController:stv animated:YES completion:^{}];
             break;
         }
+            //用户记录
+        case 302:
+        {
+            break;
+        }
+            //使用帮助
+        case 303:
+        {
+            ListViewController *ltv = [[ListViewController alloc]init];
+            [self presentViewController:ltv animated:YES completion:^{}];
+            break;
+        }
+            
             
         default:
             break;
